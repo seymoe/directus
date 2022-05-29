@@ -10,8 +10,10 @@ export function getConfigFromEnv(
 	const config: any = {};
 
 	for (const [key, value] of Object.entries(env)) {
+    if (key === 'CONTENT_SECURITY_POLICY') {
+      console.log('?', key, value)
+    }
 		if (key.toLowerCase().startsWith(prefix.toLowerCase()) === false) continue;
-
 		if (omitPrefix) {
 			let matches = false;
 

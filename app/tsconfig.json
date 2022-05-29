@@ -19,6 +19,6 @@
 		},
 		"lib": ["esnext", "dom", "dom.iterable", "scripthost"]
 	},
-	"include": ["src/**/*.ts", "src/**/*.vue"],
+	"include": ["src/**/*.ts", "src/**/*.vue", "src/panels/trandingView/widgets/composable/useInitWidget.js", "src/panels/trandingView/widgets/lib-components/entry.js"],
 	"exclude": ["node_modules"]
 }

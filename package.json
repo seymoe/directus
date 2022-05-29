@@ -63,14 +63,22 @@
 		"ts-node": "10.4.0"
 	},
 	"simple-git-hooks": {
-		"pre-commit": "npx lint-staged"
+		"pre-commit": ""
 	},
 	"lint-staged": {
-		"*.{js,ts,vue}": "eslint --fix",
-		"*.{md,yaml}": "prettier --write"
+		"*.{js,ts,vue}": "",
+		"*.{md,yaml}": ""
 	},
 	"volta": {
 		"node": "16.13.2",
 		"npm": "8.1.4"
+	},
+	"dependencies": {
+		"@revolist/revogrid-column-date": "^1.1.0",
+		"@revolist/revogrid-column-numeral": "^1.0.2",
+		"@revolist/revogrid-column-select": "^2.0.2",
+		"numeral": "^2.0.6",
+		"papaparse": "^5.3.2",
+		"vue-tradingview-widgets": "^1.0.2"
 	}
 }

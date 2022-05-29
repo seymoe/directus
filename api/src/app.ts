@@ -92,6 +92,8 @@ export default async function createApp(): Promise<express.Application> {
 	app.set('trust proxy', env.IP_TRUST_PROXY);
 	app.set('query parser', (str: string) => qs.parse(str, { depth: 10 }));
 
+  console.log('???', getConfigFromEnv('CONTENT_SECURITY_POLICY_'))
+
 	app.use(
 		helmet.contentSecurityPolicy(
 			merge(

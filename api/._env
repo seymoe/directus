@@ -1,0 +1,85 @@
+####################################################################################################
+## General
+HOST="127.0.0.1"
+PORT=8055
+PUBLIC_URL="http://dapi.xnypredict.com"
+
+####################################################################################################
+## Database
+
+DB_CLIENT="pg"
+DB_HOST="pgm-uf627u4671v0736tno.pg.rds.aliyuncs.com"
+DB_PORT="5432"
+DB_DATABASE="xnypredict-dapi"
+DB_USER="xnypredict"
+DB_PASSWORD="Xny@1014"
+DB_SSL="false"
+
+
+####################################################################################################
+## Rate Limiting
+
+RATE_LIMITER_ENABLED=false
+RATE_LIMITER_STORE=memory
+RATE_LIMITER_POINTS=25
+RATE_LIMITER_DURATION=1
+
+####################################################################################################
+## Cache
+
+CACHE_ENABLED=false
+
+####################################################################################################
+## File Storage
+## https://developer.qiniu.com/kodo/4088/s3-access-domainname
+
+STORAGE_LOCATIONS="s3"
+
+STORAGE_S3_DRIVER="s3"
+STORAGE_S3_ROOT="/xnypredict"
+STORAGE_S3_KEY="9C4vm7tesn4wr6vOxWBHbIrEnZEVk4yss-wegLYA"
+STORAGE_S3_SECRET="AJUi-ftcf-V939K-iLAmFx4p1C2E-DXX3ptG7Jqb"
+STORAGE_S3_BUCKET="xnycloud"
+STORAGE_S3_REGION="cn-east-1"
+STORAGE_S3_ENDPOINT="s3-cn-east-1.qiniucs.com"
+
+####################################################################################################
+## Security
+
+KEY="c21957b0-07f4-4558-984f-4c46fd9f6802"
+SECRET="OpHuVV_GeMywdifDr8eq97po91lDxYTE"
+
+
+ACCESS_TOKEN_TTL="15m"
+REFRESH_TOKEN_TTL="7d"
+REFRESH_TOKEN_COOKIE_SECURE=false
+REFRESH_TOKEN_COOKIE_SAME_SITE="lax"
+REFRESH_TOKEN_COOKIE_NAME="xny_refresh_token"
+
+####################################################################################################
+## Auth Providers
+
+AUTH_PROVIDERS="github"
+
+AUTH_GITHUB_DRIVER="oauth2"
+AUTH_GITHUB_CLIENT_ID="b363fcc93e9c2476909a"
+AUTH_GITHUB_CLIENT_SECRET="3f26fc70edf20db8c41e22c4253f9fafb049673b"
+AUTH_GITHUB_AUTHORIZE_URL="https://github.com/login/oauth/authorize"
+AUTH_GITHUB_ACCESS_URL="https://github.com/login/oauth/access_token"
+AUTH_GITHUB_PROFILE_URL="https://api.github.com/user"
+
+####################################################################################################
+## Extensions
+
+EXTENSIONS_PATH="./extensions"
+
+####################################################################################################
+## Email
+
+EMAIL_FROM="service@xnycloud.com"
+EMAIL_TRANSPORT="smtp"
+EMAIL_SMTP_HOST="smtp.feishu.cn"
+EMAIL_SMTP_PORT=465
+EMAIL_SMTP_USER="service@xnycloud.com"
+EMAIL_SMTP_PASSWORD="322aHPtmkuVojGza"
+EMAIL_SMTP_SECURE=true
